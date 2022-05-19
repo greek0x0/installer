@@ -3,7 +3,10 @@
 
 #Packages
 sudo apt-get update -y
-sudo apt-get install terminator git vim i3 python3 python3-pip exa nitrogen i3lock rofi  -y
+sudo apt-get install terminator git vim python3 python3-pip exa -y
+sudo apt-get install i3 i3lock -y
+sudo apt-get install nitrogen rofi -y
+sudo apt-get install exa
 sudo pip install keep
 #Repo get
 GIT=https://github.com/greek0x0
