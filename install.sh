@@ -3,7 +3,7 @@
 
 #Packages
 sudo apt-get update -y
-sudo apt-get install terminator git vim i3 python3 python3-pip exa -y
+sudo apt-get install terminator git vim i3 python3 python3-pip exa nitrogen i3lock rofi  -y
 sudo pip install keep
 #Repo get
 GIT=https://github.com/greek0x0
@@ -39,4 +39,4 @@ chmod +x $REPO/dots/setup.sh
 sh $REPO/dots/setup.sh
 chmod +x $REPO/aliasrc/setup.sh
 sh $REPO/aliasrc/setup.sh
-cp $REPO/ammo/commands.json $HOME/.keep
+cp $REPO/ammo/commands.json $HOME/.keep/commands.json
