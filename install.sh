@@ -42,4 +42,5 @@ chmod +x $REPO/dots/setup.sh
 sh $REPO/dots/setup.sh
 chmod +x $REPO/aliasrc/setup.sh
 sh $REPO/aliasrc/setup.sh
-cp $REPO/ammo/commands.json $HOME/.keep/commands.json
+mkdir $HOME/.keep
+cp $REPO/ammo/commands.json $HOME/.keep/
