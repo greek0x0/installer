@@ -3,10 +3,8 @@
 
 #Packages
 sudo apt-get update -y
-sudo apt-get install terminator git vim i3 python3 -y
-python3 install pip
-sudo pip install keep #needs to run as sudo
-
+sudo apt-get install terminator git vim i3 python3 python3-pip exa -y
+sudo pip install keep
 #Repo get
 GIT=https://github.com/greek0x0
 mkdir $HOME/Repo
