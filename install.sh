@@ -39,4 +39,5 @@ chmod +x $REPO/vimrc/setup.sh
 sh $REPO/vimrc/setup.sh
 chmod +x $REPO/dots/setup.sh
 sh $REPO/dots/setup.sh
-
+chmod +x $REPO/aliasrc/setup.sh
+sh $REPO/aliasrc/setup.sh
