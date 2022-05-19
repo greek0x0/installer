@@ -3,7 +3,7 @@
 
 #Packages
 sudo apt-get update -y
-sudo apt-get install git vim i3 python3 -y
+sudo apt-get install terminator git vim i3 python3 -y
 python3 install pip
 sudo pip install keep #needs to run as sudo
 
