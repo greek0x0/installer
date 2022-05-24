@@ -8,6 +8,11 @@ sudo apt-get install i3 i3lock -y
 sudo apt-get install nitrogen rofi -y
 sudo apt-get install exa
 sudo pip install keep
+sudo apt-get install seclists -y
+sudo apt install -y docker.io
+sudo systemctl enable docker --now
+sudo usermod -aG docker $USER
+
 #Repo get
 GIT=https://github.com/greek0x0
 mkdir $HOME/Repo
@@ -19,18 +24,25 @@ git clone $GIT/ammo $REPO/ammo
 git clone $GIT/x86-64-assembly $REPO/x86-64-assembly
 git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 
+# Other repos 
+git clone https://github.com/calebstewart/pwncat $HOME/pwncat
 
 
 
 # Exploits 
+mkdir $HOME/exploits
+mkdir $HOME/exploits/windows
+mkdir $HOME/exploits/linux
 
 
-
-
-
+#PrivEsc
+mkdir $HOME/privesec
 
 
 # Payloads
+mkdir $HOME/payloads
+mkdir $HOME/payloads/windows
+mkdir $HOME/payloads/linux
 
 
 
