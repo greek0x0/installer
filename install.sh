@@ -25,7 +25,7 @@ git clone $GIT/x86-64-assembly $REPO/x86-64-assembly
 git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 
 # Other repos 
-git clone https://github.com/calebstewart/pwncat $HOME/pwncat
+git clone https://github.com/calebstewart/pwncat $REPO/pwncat
 
 
 
