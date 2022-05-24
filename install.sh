@@ -28,7 +28,8 @@ git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 git clone https://github.com/calebstewart/pwncat $REPO/pwncat
 
 
-
+#pwncat 
+docker build -t pwncat $REPO/pwncat/Dockerfile
 # Exploits 
 mkdir $HOME/exploits
 mkdir $HOME/exploits/windows
