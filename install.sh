@@ -49,7 +49,6 @@ shortcut ! local
 shortcut @ run
 EOF
 mv /tmp/pwncatrc $REPO/pwncat/pwncatrc
-rm -r /tmp/pwncatrc
 # Exploits 
 mkdir $HOME/exploits
 mkdir $HOME/exploits/windows
