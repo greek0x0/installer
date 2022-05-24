@@ -29,7 +29,7 @@ git clone https://github.com/calebstewart/pwncat $REPO/pwncat
 wget https://raw.githubusercontent.com/jurdunnn/tmux-config/main/tmux.conf /etc/tmux.conf
 
 #pwncat 
-docker build -t pwncat $REPO/pwncat/
+sudo docker build -t pwncat $REPO/pwncat/
 # Exploits 
 mkdir $HOME/exploits
 mkdir $HOME/exploits/windows
