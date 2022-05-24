@@ -6,7 +6,7 @@ sudo apt-get update -y
 sudo apt-get install terminator git vim python3 python3-pip exa -y
 sudo apt-get install i3 i3lock -y
 sudo apt-get install nitrogen rofi -y
-sudo apt-get install exa
+sudo apt-get install exa wget tmux -y
 sudo pip install keep
 sudo apt-get install seclists -y
 sudo apt install -y docker.io
@@ -26,10 +26,10 @@ git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 
 # Other repos 
 git clone https://github.com/calebstewart/pwncat $REPO/pwncat
-
+wget https://raw.githubusercontent.com/jurdunnn/tmux-config/main/tmux.conf /etc/tmux.conf
 
 #pwncat 
-docker build -t pwncat $REPO/pwncat/Dockerfile
+docker build -t pwncat $REPO/pwncat/
 # Exploits 
 mkdir $HOME/exploits
 mkdir $HOME/exploits/windows
