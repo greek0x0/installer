@@ -26,7 +26,8 @@ git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 
 # Other repos 
 git clone https://github.com/calebstewart/pwncat $REPO/pwncat
-wget https://raw.githubusercontent.com/jurdunnn/tmux-config/main/tmux.conf /etc/tmux.conf
+wget https://raw.githubusercontent.com/jurdunnn/tmux-config/main/tmux.conf
+sudo mv tmux.conf /etc
 
 #pwncat 
 sudo docker build -t pwncat $REPO/pwncat/
