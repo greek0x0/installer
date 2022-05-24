@@ -31,6 +31,25 @@ sudo mv tmux.conf /etc
 rm -r tmux.conf
 #pwncat 
 sudo docker build -t pwncat $REPO/pwncat/
+cat << EOF >> /tmp/pwncatrc
+set -g lhost "127.0.0.1"
+set -g prefix c-k
+set -g privkey "data/pwncat"
+set -g backdoor_user "pwncat"
+set -g backdoor_pass "pwncat"
+set -g db "file://db/pwncat"
+set -g on_load {
+        privesc -l
+}
+bind s "sync"
+bind c "set state command"
+alias up upload
+alias down download
+shortcut ! local
+shortcut @ run
+EOF
+mv /tmp/pwncatrc $REPO/pwncat/pwncatrc
+rm -r /tmp/pwncatrc
 # Exploits 
 mkdir $HOME/exploits
 mkdir $HOME/exploits/windows
