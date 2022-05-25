@@ -27,6 +27,42 @@ git clone $GIT/x86_64-basic-bootsector $REPO/x86_64-basic-bootsector
 # Other repos 
 git clone https://github.com/calebstewart/pwncat $REPO/pwncat
 wget https://raw.githubusercontent.com/jurdunnn/tmux-config/main/tmux.conf
+git clone https://github.com/ropnop/kerbrute $REPO/kerbrute
+
+
+
+# Exploits 
+mkdir $HOME/exploits
+mkdir $HOME/exploits/windows
+mkdir $HOME/exploits/linux
+
+
+#PrivEsc
+mkdir $HOME/privesec
+
+
+# Payloads
+mkdir $HOME/payloads
+mkdir $HOME/payloads/windows
+mkdir $HOME/payloads/linux
+
+
+
+
+#Configuration 
+#configure vim
+chmod +x $REPO/vimrc/setup.sh
+sh $REPO/vimrc/setup.sh
+#configure i3 configuration
+chmod +x $REPO/dots/setup.sh
+sh $REPO/dots/setup.sh
+#configure aliases 
+chmod +x $REPO/aliasrc/setup.sh
+sh $REPO/aliasrc/setup.sh
+#configure command list
+mkdir $HOME/.keep
+cp $REPO/ammo/commands.json $HOME/.keep/
+#configure tmux configuration
 sudo mv tmux.conf /etc
 rm -r tmux.conf
 #pwncat 
@@ -50,35 +86,7 @@ shortcut ! local
 shortcut @ run
 EOF
 mv /tmp/pwncatrc $REPO/pwncat/pwncatrc
-# Exploits 
-mkdir $HOME/exploits
-mkdir $HOME/exploits/windows
-mkdir $HOME/exploits/linux
-
-
-#PrivEsc
-mkdir $HOME/privesec
-
-
-# Payloads
-mkdir $HOME/payloads
-mkdir $HOME/payloads/windows
-mkdir $HOME/payloads/linux
-
-
-
-
-#Configuration 
-chmod +x $REPO/vimrc/setup.sh
-sh $REPO/vimrc/setup.sh
-chmod +x $REPO/dots/setup.sh
-sh $REPO/dots/setup.sh
-chmod +x $REPO/aliasrc/setup.sh
-sh $REPO/aliasrc/setup.sh
-mkdir $HOME/.keep
-cp $REPO/ammo/commands.json $HOME/.keep/
-
-
+#tmux configuration
 cat << EOF >> /tmp/config
 [global_config]
   window_state = fullscreen
@@ -115,4 +123,6 @@ cat << EOF >> /tmp/config
       parent = window0
 [plugins]
 EOF 
+mkdir $HOME/.config/terminator
 mv /tmp/config $HOME/.config/terminator/
+
