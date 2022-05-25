@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-REPO = $HOME/Repo
+REPO=$HOME/Repo
 
 cp $HOME/.aliasrc $REPO/aliasrc
 
